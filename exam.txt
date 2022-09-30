@@ -1,3 +1,7 @@
+Variant-7
+
+
+
 Savollar:
     1) Pandas haqida ma'lumot
     2) HTML haqida ma'lumot bering
