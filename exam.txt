@@ -1,0 +1,42 @@
+Savollar:
+    1) Pandas haqida ma'lumot
+    2) HTML haqida ma'lumot bering
+    3) Funksiyada *args va **kwargs o'zgaruvchilari haqida
+    4) Botga yozilgan xabarni teskarisini 2marta qaytaradigan telegram bot tuzing
+
+
+Javob:
+
+
+1) Pandas asosan ma'lumotlarni tahlil qilish (Data analysis) uchun ishlatiladi.Pandas turli fayl formatlaridan (vergul bilan ajratilgan-(comma-separated),JSON,Parquet,SQL),ma'lumotlarni import qilishga imkon beradi.Pandas ma'lumotlarni birlashtirish,shaklini o'zgartirish, tanlash, shuningdek, ma'lumotlarni tozalash kabi turli xil ma'lumotlarni boshqarish operatsiyalariga imkon beradi.Pandas kutubxonasi NumPy kutubxonasida qurilgan bo'lib, u DataFrames ustida ishlash xususiyatlari o'rniga massivlar bilan samarali ishlashga yo'naltirilgan.
+
+Dasturchi Ues MakKinni 2008 yilda 'AQR Capital Management' kompaniyasida moliyaviy ma'lumotlarning miqdoriy tahlilini amalga oshirish uchun yuqori unumdorlik va moslashuvchan vositaga ehtiyoj tufayli pandas ustida ishlay boshlagan. AQRni tark etishdan oldin u rahbariyatni kutubxonani 'open source' shaklida qoldirishga ko'ndirdi.
+
+2) 1980 yilda fizik Tim Berners-Li, CERN pudratchisi, CERN tadqiqotchilari uchun hujjatlardan foydalanish va almashish uchun 'ENQUIRE' tizimini taklif qildi va prototipini yaratdi. 1989 yilda Berners-Li Internetga asoslangan gipermatn tizimini taklif qiluvchi ilmiy ish yozdi.Berners-Li HTMLni yaratdi va 1990-yil oxirida brauzer va server dasturlarini yozdi.O'sha yili Berners-Li va CERN ma'lumotlar tizimlari muhandisi Robert Kayliau moliyalashtirish uchun qo'shma so'rov asosida hamkorlik qilishdi, ammo loyiha CERN tomonidan rasman qabul qilinmadi.1990 yildagi shaxsiy qaydlarida u "gipermatn qo'llaniladigan ko'plab sohalarning ba'zilarini" sanab o'tdi va birinchi navbatda ensiklopediyani qo'ydi.HTMLning birinchi ommaviy tavsifi 1991 yil oxirida Tim Berners-Li tomonidan Internetda tilga olingan "HTML teglari" nomli hujjat edi.U HTMLning dastlabki, nisbatan sodda dizaynini o'z ichiga olgan 18 ta elementni tavsiflaydi.
+
+HTML - bu veb-brauzerlar matn, tasvir va boshqa materiallarni vizual yoki ovozli veb-sahifalarga sharhlash va yaratish uchun foydalanadigan belgilash tilidir.HTML belgilashning har bir elementi uchun standart xarakteristikalar brauzerda aniqlanadi va bu xususiyatlar veb-sahifa dizayneri CSSdan qo'shimcha foydalanishi orqali o'zgartirilishi yoki yaxshilanishi mumkin.
+
+Berners-Li HTMLni SGML ilovasi deb hisoblagan
+SGML - 1986-1990 yillarda CERNda ishlab chiqilgan va qo'llanilgan dastlabki SGML ilovasi edi. U eng dastlabki HTML spetsifikatsiyalarining namunasi bo'lib xizmat qildi.U 1993 yil o'rtalarida Berners-Li va Den Konolli tomonidan HTML spetsifikatsiyasi bo'yicha birinchi taklif - "Hipermatnni belgilash tili (HTML)" Internet loyihasining nashr etilishi bilan Internet muhandisligi bo'yicha ishchi guruhi (IETF) tomonidan rasmiy ravishda shunday ta'riflangan.
+
+1994 yil boshida HTML va HTML+ qoralamalarining amal qilish muddati tugagandan so'ng, IETF HTML ishchi guruhini yaratdi, u 1995 yilda "HTML 2.0"ni yaratishni yakunladi, birinchi HTML spetsifikatsiyasi standart sifatida ko'rib chiqilishi mo'ljallangan bo'lib, unga muvofiq kelajakdagi ilovalar asoslanishi kerak edi.IETF homiyligidagi keyingi rivojlanish raqobatdosh manfaatlar tufayli to'xtatildi. 1996 yildan beri HTML spetsifikatsiyalari World Wide Web Consortium (W3C) tomonidan tijoriy dasturiy ta'minot sotuvchilari ma'lumotlari bilan saqlanib kelinmoqda. 
+
+2000 yilda HTML ham xalqaro standartga aylandi (ISO/IEC 15445:2000). HTML 4.01 1999-yil oxirida nashr etildi, keyingi xatolar 2001-yilgacha chop etildi. 2004-yilda HTML5-da veb-gipermatnli ilovalar texnologiyasi ishchi guruhida (WHATWG) ishlanma boshlandi, bu 2008-yilda yakunlandi va standartlashtirildi.
+
+
+HTML bir nechta asosiy komponentlardan iborat, jumladan teglar (va ularning atributlari), belgilarga asoslangan ma'lumotlar turlari, belgilar havolalari va ob'ektlarga havolalar. HTML teglari ko'pincha <h1> va </h1> kabi juft bo'lib keladi, lekin ba'zilari bo'sh elementlarni ifodalaydi va shuning uchun bog'lanmagan, masalan, <img>. Bunday juftlikdagi birinchi teg boshlang'ich teg, ikkinchisi esa yakuniy teg (ular ochilish teglari va yopish teglari deb ham ataladi).
+
+<html> va </html> orasidagi matn veb-sahifani tavsiflaydi va <body> va </body> orasidagi matn ko'rinadigan sahifa tarkibidir. Belgilash matni <title> Bu sarlavha</title> brauzer yorliqlari va oyna sarlavhalarida ko'rsatilgan brauzer sahifasi sarlavhasini belgilaydi va <div> tegi oson uslublash uchun foydalaniladigan sahifaning bo'linishini belgilaydi. <head> va </head> oralig'ida veb-sahifa metama'lumotlarini aniqlash uchun <meta> elementidan foydalanish mumkin.
+
+
+
+3)Funktsiyada o'tkazishimiz kerak bo'lgan argumentlar soniga shubha tug'ilganda, biz funktsiya argumenti sifatida  '*args' va '**kwargs' belgilaridan foydalanamiz.
+
+Pythonda funksiya taʼriflarida '*args' maxsus sintaksisi funksiyaga oʻzgaruvchan sonli argumentlarni oʻtkazish uchun ishlatiladi. U kalit bo'lmagan, o'zgaruvchan uzunlikdagi argumentlar ro'yxatini o'tkazish uchun ishlatiladi.
+
+O'zgaruvchan sonli argumentlarni olish uchun * belgisidan foydalanish - konventsiyaga ko'ra, u ko'pincha args so'zi bilan ishlatiladi. '*args' sizga avval belgilagan rasmiy argumentlar sonidan ko'ra ko'proq argumentlarni olish imkonini beradi. '*args' yordamida har qanday miqdordagi qo'shimcha argumentlar joriy rasmiy parametrlaringizga (shu jumladan, nol qo'shimcha argumentlar) bog'lanishi mumkin.
+
+
+Pythonda funksiya taʼriflaridagi **kwargs maxsus sintaksisi kalit soʻzli, oʻzgaruvchan uzunlikdagi argumentlar roʻyxatini oʻtkazish uchun ishlatiladi. Biz kwargs nomini qo'sh yulduz bilan ishlatamiz. Buning sababi shundaki, qo'sh yulduz bizga kalit so'z argumentlari (va ularning istalgan soni) orqali o'tishga imkon beradi.
+
+Kalit so'z argumenti - bu o'zgaruvchini funktsiyaga o'tkazishda unga nom berish.Kvarglarni har bir kalit so'zni biz bilan birga o'tadigan qiymatga moslashtiradigan lug'at deb hisoblash mumkin. Shuning uchun biz kvarglarni takrorlaganimizda, ularni chop etish tartibi yo'qdek tuyuladi.
