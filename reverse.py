@@ -2,4 +2,9 @@ def reversed_sentence(text):
     a = text.split(" ")
     a.reverse()
 
-    return a
+    string = ""
+
+    for i in a:
+        string += i + " "
+
+    return string
