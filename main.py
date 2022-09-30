@@ -24,8 +24,6 @@ async def start(update: Update, context: ContextTypes):
         "Men kiritgan gapingizni teskarisiga 2 marta yozib berish uchun yasaldim😆\n"
     )
 
-    return True
-
 
 async def message_handler(update: Update, context: ContextTypes):
     "Handles message entered by the user"
@@ -33,20 +31,20 @@ async def message_handler(update: Update, context: ContextTypes):
     text = update.message.text
     context.user_data["choice"] = text
 
-    await update.message.reply_text("Success...").sleep(2)
+    await update.message.reply_text("Success...")
 
     a = reversed_sentence(text)
     await update.message.reply_text(a)
     await update.message.reply_text(a)
-
-    return True
 
 
 def main():
     """Run the bot"""
     application = Application.builder().token(TOKEN).build()
     application.add_handler(CommandHandler("start", start))
-    application.add_handler(MessageHandler(filters.TEXT, message_handler))
+    application.add_handler(
+        MessageHandler(filters.TEXT & ~filters.COMMAND, message_handler)
+    )
 
     application.run_polling()
 
